@@ -1,4 +1,4 @@
-var path = require('path');
+const path = require('path');
 const webpack = require('webpack');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -10,6 +10,7 @@ const extractPlugin = new ExtractTextPlugin({
 const config = require('./src/config-dev.json');
 
 module.exports = {
+    mode: 'development',
     entry: [
         'react-hot-loader/patch',
         "./index.js"

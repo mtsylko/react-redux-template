@@ -8,7 +8,7 @@ const mapStateToProps = (state, ownProps) => {
     return {
     	location: getPath(state)
     }
-}
+};
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
@@ -16,11 +16,11 @@ const mapDispatchToProps = (dispatch, ownProps) => {
           dispatch({type: actions.BASIC_ACTION})
         }
     }
-}
+};
 
 const App = connect(
     mapStateToProps,
     mapDispatchToProps
-)(TheComponent)
+)(TheComponent);
 
 export default App;

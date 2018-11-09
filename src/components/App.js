@@ -19,10 +19,10 @@ class App extends React.Component {
 App.propTypes = {
 	onCreate: PropTypes.func.isRequired,
 	location: PropTypes.string
-}
+};
 
 App.defaultProps = {
 
-}
+};
 
 export default App;
